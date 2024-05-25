@@ -1,0 +1,99 @@
+/* ----------------Header Css------------------ */
+.header {
+  margin: 52px;
+}
+
+.list {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #777;
+}
+
+.white {
+  background-color: #fff;
+  color: #151515;
+}
+
+.black {
+  background-color: #151515;
+  color: #fff;
+}
+
+.logo {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lightMoodIcon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

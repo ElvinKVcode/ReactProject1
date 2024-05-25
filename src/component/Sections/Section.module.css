@@ -1,0 +1,140 @@
+/* -----Section Css------ */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  main {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .left, .right {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .divText {
+    margin-bottom: 20px;
+  }
+  
+  .divText h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #151515;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .divText h6 {
+    font-size: 18px;
+    color: #151515;
+    margin-top: 5px;
+  }
+  
+  .divInputBtn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .divInputBtn input {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .divInputBtn input::placeholder {
+    color: #151515;
+  }
+  
+  .divInputBtn button {
+    padding: 11px 15px;
+    font-size: 1rem;
+    background-color: #151515;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .divInputBtn button:hover {
+    background-color: #777;
+  }
+  
+  .black {
+    background-color: #151515;
+    color: #fff;
+  }
+  
+  .divLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .divLogo img {
+    max-width: 484px;
+  }
+  
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right img {
+    max-width: 100%;
+    height: 580px;
+    width: 550px;
+  }
+  
+  .animatedLogo {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left, .right {
+      max-width: 100%;
+    }
+  
+    .right img {
+      width: 100%;
+      height: auto;
+    }
+  }
