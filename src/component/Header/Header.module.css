@@ -42,13 +42,13 @@
 }
 
 .white {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #151515;
 }
 
 .black {
   background-color: #151515;
-  color: #fff;
+  color: #ffffff;
 }
 
 .logo {
@@ -65,6 +65,11 @@
 }
 
 .lightMoodIcon {
+  animation: pulse 2s infinite;
+}
+
+.darkMoodIcon {
+  background-color: #fff;
   animation: pulse 2s infinite;
 }
 
@@ -86,12 +91,12 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .buttons {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .list {
     flex-direction: column;
     gap: 10px;

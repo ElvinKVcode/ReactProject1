@@ -1,123 +1,122 @@
 /*------------- Footer Css --------------*/
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 50px 65px;
-    background-color: #151515;
-  }
-  
-  .leftFooter {
-    flex: 1;
-    
-    margin-bottom: 30px;
-  }
-  
-  .leftFooter h1 {
-    font-size: 24px;
-    color: #FFFFFF;
-    margin: 5px 0;
-  }
-  
-  .divInputBtn {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .divInputBtn input {
-    max-width: 300px;
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    flex: 1;
-  }
-  
-  .divInputBtn input::placeholder {
-    color: #151515;
-  }
-  
-  .divInputBtn button {
-    padding: 11px 15px;
-    font-size: 1rem;
-    background-color: #999999;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .divInputBtn button:hover {
-    background-color: #777;
-  }
-  
-  .black {
-    background-color: #999999;
-    color: #fff;
-  }
-  
-  .leftFooter span {
-    display: block;
-    margin-top: 30px;
-    color:#FFFFFF;
-    font-size: 14px;
-  }
-  
-  .rightFooter {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 300px;
-  }
-  
-  .mailFooter,
-  .linksFooter,
-  .textFooter,
-  .socialMedia {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-  }
-  
-  .linksFooter ul,
-  .textFooter h3 {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .linksFooter li,
-  .textFooter h3 {
-    margin: 10px 0;
-  }
-  
-  .linksFooter a {
-    color: #FFFFFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .linksFooter a:hover {
-    color: #777;
-  }
-  
-  .socialMedia a {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .socialMedia img {
-    width: 24px;
-    height: 24px;
-background-color: #fff;
-  }
-  /* ---------------Animated-------- */
-  .logoFooter {
+  padding: 50px 65px;
+  background-color: #151515;
+}
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.leftFooter {
+  flex: 1;
+
+  margin-bottom: 30px;
+}
+
+.leftFooter h1 {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.divInputBtn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.divInputBtn input {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.divInputBtn input::placeholder {
+  color: #151515;
+}
+
+.divInputBtn button {
+  padding: 11px 15px;
+  font-size: 1rem;
+  background-color: #999999;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.divInputBtn button:hover {
+  background-color: #777;
+}
+
+.black {
+  background-color: #999999;
+  color: #fff;
+}
+
+.leftFooter span {
+  display: block;
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.rightFooter {
+  flex: 1;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mailFooter,
+.linksFooter,
+.textFooter,
+.socialMedia {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.linksFooter ul,
+.textFooter {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linksFooter a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linksFooter a:hover {
+  color: #777;
+}
+
+.socialMedia a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+}
+/* ---------------Animated-------- */
+.logoFooter {
   animation: rotate 2s linear infinite;
 }
 
@@ -131,34 +130,35 @@ background-color: #fff;
 }
 
 .socialMedia {
-    animation: float 2s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
-  
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ---------Responsive Styles----------- */
+@media (max-width: 768px) {
+  .leftFooter,
+  .rightFooter {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
-  /* ---------Responsive Styles----------- */
-  @media (max-width: 768px) {
-    .leftFooter, .rightFooter {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-    
-    .divInputBtn {
-      flex-direction: column;
-    }
-    
-    .divInputBtn input {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
+  .divInputBtn {
+    flex-direction: column;
   }
+
+  .divInputBtn input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

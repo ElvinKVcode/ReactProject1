@@ -1,7 +1,7 @@
 // ----------------App Jsx-------------------
 
 import Header from './component/Header/Header'
-import Section from './component/Sections/Section'
+import Hero from './component/Sections/Hero'
 import Footer from './component/Footer/Footer';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className={'wrapper'}>
       <Header />
-      <Section />
+      <Hero />
       <Footer />
     </div>
   )
